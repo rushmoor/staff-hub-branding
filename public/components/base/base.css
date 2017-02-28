@@ -1,0 +1,109 @@
+body #s4-ribbonrow {
+  /*@include linearGradient($bg-header-gradient-top, $bg-header-gradient-bottom);*/
+  /*background: #006b8d url(http://sharepoint/Discussion/SiteAssets/Branding/logo-staff-hub.png) no-repeat 0 0;*/
+  background: #006b8d;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+  /* ie 6/7 */
+}
+
+/*a {
+	&:link, &:visited {
+		color: $teal;
+	}
+}
+
+.ms-vb,.ms-vb2,.ms-vb-user {
+	a {
+		&:link,&:visited,&:hover,&:active {
+			color: $teal;
+		}
+	}
+}
+
+.ms-WPTitle {
+	color: $teal;
+	a {
+		color: $teal;
+	}
+}*/
+.ms-WPBody a:link, .ms-WPBody a:visited, .ms-WPBody a:hover, .ms-WPBody a:active {
+  /*color: $teal;*/
+  color: #0072bc;
+}
+
+td[title^="Announcements"] h3 span {
+  font-size: 18px;
+}
+
+#announcements-webpart {
+  font-family: "Cabin", sans-serif;
+  margin-left: 15px;
+}
+
+#announcements-webpart h1, #announcements-webpart h2, #announcements-webpart h3, #announcements-webpart h4 {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#announcements-webpart h1 {
+  border-bottom: 1px solid #e4e4e4;
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+#announcements-webpart h1 a:link, #announcements-webpart h1 a:visited, #announcements-webpart h1 a:hover, #announcements-webpart h1 a:active {
+  color: #676767;
+}
+
+#announcements-webpart h2 {
+  color: #ff1493;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+#announcements-webpart ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#announcements-webpart li {
+  background-color: #fcfcfc;
+  border-top: 1px solid #e4e4e4;
+  border-right: 1px solid #bababa;
+  border-bottom: 1px solid #bababa;
+  border-left: 1px solid #e4e4e4;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+#announcements-webpart li img {
+  float: right;
+  margin-bottom: 20px !important;
+  margin-left: 20px !important;
+}
+
+#announcements-webpart .metadata {
+  border-top: 1px solid #e4e4e4;
+  margin-top: 10px;
+  padding-top: 10px;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "rbc-staff-hub",
+  "version": "1.0.0",
+  "description": "Provides a set of Rushmoor Borough Council style branding for a SharePoint 2010 website",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Melvin Lota",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^2.0.1",
+    "gulp-util": "^3.0.8",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "jsrender": "^0.9.83"
+  }
+}

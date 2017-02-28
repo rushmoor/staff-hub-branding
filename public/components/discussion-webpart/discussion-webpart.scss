@@ -1,0 +1,16 @@
+$border-color: #ebebeb;
+
+#discussion-webpart {
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+	li {
+		border-bottom: 1px solid $border-color;
+		padding-bottom: 5px;
+		margin-bottom: 5px;
+	}
+	.author {
+			padding-bottom: 5px;
+	}
+}

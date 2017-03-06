@@ -18,8 +18,6 @@ $bodyfont: 'Cabin', sans-serif;
 
 body {
 	#s4-ribbonrow {
-		/*@include linearGradient($bg-header-gradient-top, $bg-header-gradient-bottom);*/
-		/*background: #006b8d url(http://sharepoint/Discussion/SiteAssets/Branding/logo-staff-hub.png) no-repeat 0 0;*/
 		background: #006b8d;
 	}
 }
@@ -38,31 +36,9 @@ body {
 	zoom: 1; /* ie 6/7 */
 }
 
-/*a {
-	&:link, &:visited {
-		color: $teal;
-	}
-}
-
-.ms-vb,.ms-vb2,.ms-vb-user {
-	a {
-		&:link,&:visited,&:hover,&:active {
-			color: $teal;
-		}
-	}
-}
-
-.ms-WPTitle {
-	color: $teal;
-	a {
-		color: $teal;
-	}
-}*/
-
 .ms-WPBody {
 	a {
 		&:link,&:visited,&:hover,&:active {
-			/*color: $teal;*/
 			color: #0072bc;
 		}
 	}
@@ -127,5 +103,15 @@ td[title^="Announcements"] {
 		border-top: 1px solid #e4e4e4;
 		margin-top: 10px;
 		padding-top: 10px;
+	}
+
+	.announcement-image {
+		float: right;
+		margin-bottom: 20px !important;
+		margin-left: 20px !important;
+  		img {
+		max-width: 240px;
+			height: auto;
+		}
 	}
 }

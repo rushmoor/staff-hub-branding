@@ -27,7 +27,7 @@ RBC.InitDiscussionWebPart = (function() {
 
 		var deffereds = $.map(discussionListIds, function(current) {
 			var listRssUrl = BASE_URL + "/_layouts/listfeed.aspx?List=" + current;
-			return $.get(listRssUrl, function(data) {
+			return $.get(listRssUrl, { "_": $.now() }, function(data) {
 				var $xml = $(data);
 
 				$xml.find("item").slice(0, NUMBER_OF_ITEMS).each(function() {
@@ -67,36 +67,6 @@ RBC.InitDiscussionWebPart = (function() {
 			}
 		});
 	};
-
-	/*var getRss = function() {
-		$.get(RSS_URL, function(data) {
-			var $xml = $(data),
-				html = [];
-
-			html.push("<ul>");
-			$xml.find("item").slice(0, NUMBER_OF_ITEMS).each(function() {
-				var $this = $(this),
-					item = {
-						title: $this.find("title").text(),
-						link: $this.find("link").text(),
-						description: $this.find("description").text(),
-						pubDate: $this.find("pubDate").text(),
-						author: $this.find("author").text()
-				};
-
-				html.push(
-					"<li>", 
-						"<a href='", item.link, "'>", item.title, "</a><br/>",
-						"<div class='author'>", item.author, "</div>",
-						"<div>", item.pubDate, "</div>",
-					"</li>"
-				);
-			});
-			html.push("</ul>");
-
-			$("#discussion-webpart").append(html.join(""));
-		});
-	};*/
 
 	return {
 		init: function() {

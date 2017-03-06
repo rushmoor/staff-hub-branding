@@ -92,6 +92,7 @@ td[title^="Announcements"] h3 span {
 }
 
 #announcements-webpart .announcement-image img {
+  border: 0;
   max-width: 240px;
   height: auto;
 }

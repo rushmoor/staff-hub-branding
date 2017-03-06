@@ -110,7 +110,8 @@ td[title^="Announcements"] {
 		margin-bottom: 20px !important;
 		margin-left: 20px !important;
   		img {
-		max-width: 240px;
+			border: 0;
+			max-width: 240px;
 			height: auto;
 		}
 	}
